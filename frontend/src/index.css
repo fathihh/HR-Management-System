@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Full viewport coverage */
+html, body, #root {
+  height: 100%;
+}
+
+/* ---------- Global glossy background ---------- */
+@layer base {
+  body {
+    @apply text-white bg-ink-900 overflow-hidden;
+    background:
+      radial-gradient(1200px 600px at 10% 10%, rgba(59,163,255,0.12), transparent 60%),
+      radial-gradient(1000px 500px at 90% 20%, rgba(153,84,255,0.10), transparent 60%),
+      radial-gradient(1200px 700px at 50% 110%, rgba(59,163,255,0.12), transparent 60%),
+      #0B1220;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: ui-sans-serif, system-ui, -apple-system, "Inter", "Segoe UI", Roboto, Arial;
+  }
+}
+
+/* ---------- Reusable UI Components ---------- */
+@layer components {
+
+  /* Soft glass surface card */
+  .glass {
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255,255,255,0.08);
+    @apply rounded-2xl shadow-lg;
+  }
+
+  .card {
+    @apply glass p-8;
+  }
+
+  /* Buttons */
+  .btn-primary {
+    @apply w-full py-3 rounded-xl font-semibold text-white
+           bg-blue-600 hover:bg-blue-500 transition disabled:opacity-50;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 rounded-xl font-medium
+           bg-white/10 text-white
+           hover:bg-white/20 border border-white/10 transition;
+  }
+
+  /* Input fields */
+  .input-field {
+    @apply w-full px-4 py-2 rounded-xl bg-white text-black placeholder-gray-500
+           border border-white/20
+           focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent
+           transition;
+  }
+}
+
+/* ---------- Animations ---------- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease-out;
+}
