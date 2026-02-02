@@ -1,0 +1,44 @@
+
+# HRMS Backend Requirements
+
+
+# Core Framework
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.6
+
+# Database
+sqlalchemy==2.0.25
+
+# AI / LangChain
+langchain==0.2.14
+langchain-community==0.2.6
+langchain-text-splitters==0.2.4
+langchain-huggingface==0.0.1
+google-generativeai==0.3.2
+
+# Embeddings & Vector Store
+sentence-transformers==2.6.1
+faiss-cpu==1.11.0
+# compatible with torch==2.6.0+cpu
+transformers>=4.41,<4.47
+tokenizers>=0.20,<0.21
+
+# Document Processing
+llama-parse>=0.4.0
+unstructured[local-inference]==0.12.2
+pdfplumber==0.10.3
+reportlab==4.0.9
+
+# Data Processing
+pandas==2.2.0
+numpy<2,>=1.23.2
+
+# Utilities
+python-dotenv==1.0.0
+nest-asyncio==1.6.0
+tqdm==4.66.1
+pydantic>=2.5,<3
+
+# CORS
+fastapi-cors==0.0.6
