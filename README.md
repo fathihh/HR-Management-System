@@ -1,8 +1,8 @@
-# 📋 AUREON 360 — AI-Powered HR Management System
+# AI-Powered HR Management System
 
 **Smarter workflows. Happier teams.**
 
-AUREON 360 is an AI-powered HR Management System that combines natural language processing, document intelligence, automated workflows, and secure authentication to enable smart HR operations. Designed for both HR and employees, this system supports employee self-service, automated decision support, and structured HR actions.
+This is an AI-powered HR Management System that combines natural language processing, document intelligence, automated workflows, and secure authentication to enable smart HR operations. Designed for both HR and employees, this system supports employee self-service, automated decision support, and structured HR actions.
 
 ---
 
@@ -165,6 +165,7 @@ npm run dev
 - ✔️ Separate HR & Employee experiences
 
 ---
+
 
 
 
